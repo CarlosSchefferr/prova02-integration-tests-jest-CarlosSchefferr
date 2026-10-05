@@ -20,7 +20,7 @@ jobs:
           node-version: 22
           cache: 'npm'
       - run: npm install
-      - run: npm test
+      - run: npx jest test/restful_booker.spec.ts --config ./jest.config.js
 
   sonarcloud:
     name: Run SonarCloud
